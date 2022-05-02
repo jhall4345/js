@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Distance Calculator</title>
+    <link rel="stylesheet" type="text/css" href="default.css" />
+</head>
+
+<body>
+<div id="content">
+    <h1>Distance Calculator</h1>
+
+    <label>Enter Distance in inches:</label>
+    <input type="text" id="distance" />
+    <input type="button" value="Calculate" name="calculate" id="calculate"/><br />
+
+    <p>&nbsp;</p>
+		
+    <label>Miles:</label>
+    <input type="text" id="miles" class="disabled" disabled="disabled" /><br />
+					
+    <label>Yards:</label>
+    <input type="text" id="yards" class="disabled" disabled="disabled" /><br />
+	
+    <label>Feet:</label>
+    <input type="text" id="feet" class="disabled" disabled="disabled" /><br />
+		
+    <label>Inches:</label>
+    <input type="text" id="inches" class="disabled" disabled="disabled" /><br />			
+    <p>&nbsp;</p>
+    <script>
+        function calculateDistance () {
+            var distance = parseInt(document.getElementById("distance").value);
+            var miles = Math.floor(distance/63360);
+            remainder = distance % 63360;
+            var yards = Math.floor(remainder/36);
+            remainder = remainder % 36;
+            var feet = Math.floor(remainder/12);
+            remainder = remainder % 12;
+            var inches = remainder;
+
+            if (distance >= 0) {
+                document.getElementById("miles").value = miles;
+                document.getElementById("yards").value = yards;
+                document.getElementById("feet").value = feet;
+                document.getElementById("inches").value = inches;
+            }
+                else {
+                    alert("Invalid input. Enter a number");
+                }
+            }
+
+        var calcButton = document.getElementById("calculate");
+        calcButton.addEventListener("click", calculateDistance);
+
+    </script>
+</div>
+</body>
+</html>

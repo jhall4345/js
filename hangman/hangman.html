@@ -1,0 +1,67 @@
+<!--Jonathan Hall-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+  </head>
+
+  <body>
+
+    <h1>Guess the Word</h1>
+
+    <div id="mydiv"><h2 id="guessedWord">_ _ _ _ _ _ _ _ _</h2></div>
+
+    <input type="text" placeholder="Enter a character to guess" id="str" />
+
+    <button onclick="clicked();">Guess</button>
+
+    <h3 id="message">Keep Playing</h3>
+
+  </body>
+
+ <script> 
+
+var word = ["A", "I", "R", "P", "L", "A", "N", "E" ];
+var guess = ["_", "_", "_", "_", "_", "_", "_", "_"];
+
+function guessLetter(str) {
+   str = str.toUpperCase();
+   let flag = 0;
+
+ //check if guessed character is in our word **for loop = where do we start where are we going how do we get there**
+  for (var i=0; i<word.length; i++) {
+    if(word[i]==str) {
+      flag = 1;
+      guess[i]=str;
+    }
+  }
+  if (flag==1) {
+    document.getElementById("guessedWord").innerHTML = guess.join(" "); //join arrays
+    document.getElementById("str").value = ""; //clear input box
+    document.getElementById("message").innerHTML = "'" + str + "' is a good guess!";
+  }
+  else {
+    document.getElementById("str").value = ""; //clear input box
+    document.getElementById("message").innerHTML = "'" +str + "' is not a good guess. Try again.";
+  }
+  //check if all letters have been guessed
+  if(!guess.includes("_")) {
+    document.getElementById("message").innerHTML = "Congratulations you won the game!";
+}
+}
+
+function clicked() {
+   let str = document.getElementById("str").value;
+   guessLetter(str);
+ }
+ </script>
+
+</html>
+

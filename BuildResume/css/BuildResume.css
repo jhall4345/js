@@ -1,0 +1,89 @@
+/* Jonathan Hall
+ 12/10/2021 */
+
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:floralwhite;
+}
+
+#banner {
+    background-color:lightsteelblue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+    color: rgb(46, 43, 43);
+    font-weight:normal;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-variant: small-caps;
+    margin-left: 1%;
+}
+
+h3 {
+    font-size: 20pt;
+    margin-left: 1%;
+    margin-bottom: .5%;
+}
+
+p {
+    font-size: 11pt;
+    margin-left: 1%;
+    margin-bottom: 2.5%;
+    margin-top: 0%;
+    font-style: oblique;
+}
+
+label {
+    font-size: 12pt;
+    font-variant: small-caps;
+    margin-left: 2%;
+}
+
+input {
+    margin-left: 2%;
+    margin-top: .25%;
+    width: 15%;
+    height: 20px;
+}
+textarea {
+    margin-left: 2%;
+    margin-top: .25%;
+    width: 30%;
+    height: 140px;
+}
+
+.employer {
+    font-weight: bold;
+    font-size: 14.5pt;
+}
+
+hr {
+    color:rgb(71, 72, 73)
+    width: 35%;
+    margin-left: 1%;
+    margin-top: 1.5%;
+}
+
+#myButton {
+    margin-left: 7%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: lightsteelblue;
+    width: 14%;
+    height: 32px;
+}
+
+#myButton:hover {
+    cursor: pointer;
+    opacity: .85;
+}
+

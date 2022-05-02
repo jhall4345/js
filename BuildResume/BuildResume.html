@@ -1,0 +1,109 @@
+<!--Name: Jonathan Hall
+    Date: 12/8/21-->
+    <!DOCTYPE html>
+    <html lang="en">
+    
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/BuildResume.css">
+        <title>Web-115 Final Project</title>
+    </head>
+
+    <body>
+        <div id="banner">
+            <h1>Jonathan Hall</h1>
+            <h2>Web-115 Section 4101</h2>
+            <h2>Build Your Resume</h2>
+        </div>
+
+        <form id ="form">
+            <section id="contact">
+                <h3>Contact Info</h3><br>
+                <label for="name">Enter your full name:</label><br>
+                <input type="text" id="name" required><br><br>
+                <label for="city">Enter your city:</label><br>
+                <input type="text" id="city" required><br><br>
+                <label for="state">Enter your state:</label><br>
+                <input type="text" id="state" required><br><br>
+                <label for="zip">Enter your zipcode:</label><br>
+                <input type="number" id="zip" required><br><br>
+                <label for="phone">Enter your phone number:</label><br>
+                <input type="tel" id="phone" placeholder="(123)-456-7890" required><br><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" required><br><br>
+                <label for="LinkedIn">Enter your LinkedIn URL:</label><br>
+                <input type="text" id="LinkedIn"><br><br>
+                <label for="portfolio">Enter your portfolio link:</label><br>
+                <input type="text" id="portfolio"><br><br>
+            </section>
+            <section id="professionalSummary">
+                <h3>Related Profession Experience</h3>
+                <p>In this section, create a brief outline of your professional summary. Include any related abilities and experiences. </p>
+                <label for="job">Desired Job:</label><br>
+                <input type="text" id="job"><br><br>
+                <label for="exp1">Professional Summary:</label><br>
+                <input type="text" id="exp1" placeholder="related skills/experiences"><br><br>
+                <input type="text" id="exp2" placeholder="related skills/experiences"><br><br>
+                <input type="text" id="exp3" placeholder="related skills/experiences"><br><br>
+            </section>
+            <section id="technicalSkills">
+                <h3>Technical Experience</h3>
+                <p>In this section, describe your hard skills by including any coding languages and web tools you have experience with.</p>
+                <label for="skills1">Hard Skills:</label><br>
+                <input type="text" id="skills1"><br><br>
+                <input type="text" id="skills2"><br><br>
+                <input type="text" id="skills3"><br><br>
+            </section>
+            <section id="education">
+                <h3>Education</h3><br>
+                <label for="school">School Attended:</label><br>
+                <input type="text" id="school"><br><br>
+                <label for="degree">Degree:</label><br>
+                <input type="text" id="degree"><br><br>
+                <label for="courses">Courses:</label><br>
+                <textarea id="courses" rows="6" cols="50" placeholder="Describe your educational experience, including your related courses and specific studies."></textarea>
+            </section>
+            <section id="employment">
+                <h3>Employment Experience</h3><br>
+                <label for="emp1" class="employer">Employer:</label><br>
+                <input type="text" id="emp1"><br><br>
+                <label for="jobTitle1">Job Title:</label><br>
+                <input type="text" id="jobTitle1"><br><br>
+                <label for="jobInfo1">Job Description:</label><br>
+                <textarea id="jobInfo1" rows="6" cols="50" placeholder= "Described you job responsibilities, including any relevant skills and experience."></textarea><br><br>
+                <label for="fromDate1">From:</label><br>
+                <input type="date" id="fromDate1"><br><br>
+                <label for="untilDate1">Until:</label><br>
+                <input type="date" id="untilDate1"><hr><br><br><br>
+
+                <label for="emp2" class="employer">Employer:</label><br>
+                <input type="text" id="emp2"><br><br>
+                <label for="jobTitle2">Job Title:</label><br>
+                <input type="text" id="jobTitle2"><br><br>
+                <label for="jobInfo2">Job Description:</label><br>
+                <textarea id="jobInfo2" rows="6" cols="50" placeholder= "Described you job responsibilities, including any relevant skills and experience."></textarea><br><br>
+                <label for="fromDate2">From:</label><br>
+                <input type="date" id="fromDate2"><br><br>
+                <label for="untilDate2">Until:</label><br>
+                <input type="date" id="untilDate2"><hr><br><br><br>
+
+                <label for="emp3" class="employer">Employer:</label><br>
+                <input type="text" id="emp3"><br><br>
+                <label for="jobTitle3">Job Title:</label><br>
+                <input type="text" id="jobTitle3"><br><br>
+                <label for="jobInfo3">Job Description:</label><br>
+                <textarea id="jobInfo3" rows="6" cols="50" placeholder= "Described you job responsibilities, including any relevant skills and experience."></textarea><br><br>
+                <label for="fromDate3">From:</label><br>
+                <input type="date" id="fromDate3"><br><br>
+                <label for="untilDate3">Until:</label><br>
+                <input type="date" id="untilDate3"><hr><br><br>
+            </section>
+            <section id="references">
+                <h3>References</h3><br>
+                <textarea id="refInfo" rows="6" cols="50" placeholder="Include reference name, contact, and their relationship to you."></textarea><br><br>
+            </section>
+        
+            <input type="button" id="myButton" value = "Create Resume">
+            </form>
+            <script src="js/projectJS.js"></script>
+    </body>
+    </html>
